@@ -1,0 +1,109 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: slategray;
+    padding: 0;
+}
+main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+h2{
+    text-align: center;
+}
+#avertissement{
+    color: rgb(170, 24, 24);
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.822);
+    font-style: italic;
+    font-size: smaller;
+}
+.div-calcul{
+    width: 40%;
+    border: 2px solid black;
+}
+.div-surface{
+    width: 40%;
+    border-width: 2px 2px 2px 0;
+    border-style: solid;
+    border-color: black;
+}
+.form-calcul{
+    display: flex;
+    flex-direction: column;
+}
+.form-calcul > *{
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.form-calcul input{
+    background-color: rgb(141, 131, 131);
+    border-radius: 7px;
+    border: 2px solid rgb(63, 63, 63);
+    width: 40%;
+    margin-left: 20px;
+}
+.form-calcul #piece{
+    width: 75%;
+}
+.form-calcul input::placeholder{
+    color: rgb(24, 24, 24);
+    font-style: italic;
+}
+.form-calcul input:focus-visible{
+    outline: 2px solid rgb(29, 29, 29);
+}
+.form-calcul label{
+    font-weight: bold;
+    margin-top: 5px;
+}
+.form-calcul button{
+    background-color: rgb(16, 134, 16);
+    font-weight: bold;
+    color: rgb(228, 228, 228);
+    padding: 10px;
+    width: 50%;
+    margin: 20px auto 10px auto;
+    border-radius: 7px;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.form-calcul button:hover{
+    background-color:  rgb(3, 167, 3);
+    transition: 0.5s;
+    color: rgb(7, 7, 7);
+}
+.form-calcul span{
+
+    margin: 15px auto;
+    width: 70%;
+}
+@media (max-width: 500px) {
+    body{
+        overflow: auto;
+        height: auto;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .div-surface, .div-calcul{
+        width: 80%;
+    }
+    .div-surface{
+        border: 2px solid black;
+        min-height: 100px;
+    }
+}
